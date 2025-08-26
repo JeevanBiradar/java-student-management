@@ -1,17 +1,20 @@
+package Student_management_interface;
+
 public class Student {
 
-    private String sname;
     private int rollnumber;
+    private String sname;
     private String section;
     private String department;
     private String semester;
 
-    public Student(String sname, int rollnumber, String section, String department, String semester) {
-        this.sname = sname;
+    public Student(int rollnumber,String sname,String section, String department, String semester) {
+
         this.rollnumber = rollnumber;
-        this.section = section;
-        this.department = department;
-        this.semester = semester;
+        this.sname = sname.toUpperCase();
+        this.section = section.toUpperCase();
+        this.department = department.toUpperCase();
+        this.semester = semester.toUpperCase();
     }
 
     public String getSname() {
@@ -19,7 +22,7 @@ public class Student {
     }
 
     public void setSname(String sname) {
-        this.sname = sname;
+        this.sname = sname.toUpperCase();
     }
 
     public int getRollnumber() {
@@ -35,7 +38,7 @@ public class Student {
     }
 
     public void setSection(String section) {
-        section = section;
+        this.section = section.toUpperCase();
     }
 
     public String getDepartment() {
@@ -43,7 +46,7 @@ public class Student {
     }
 
     public void setDepartment(String department) {
-        this.department = department;
+        this.department = department.toUpperCase();
     }
 
     public String getSemester() {
@@ -51,18 +54,17 @@ public class Student {
     }
 
     public void setSemester(String semester) {
-        this.semester = semester;
+        this.semester = semester.toUpperCase();
     }
 
     @Override
     public String toString(){
 
         return "Name:" + sname
-                + "\nRollnumber:" + rollnumber
+                + "\nRoll number:" + rollnumber
                 +"\nSection:"+ section
                 +"\nDepartment:"+ department
-                +"\nSemster:"+ semester + "\n"
-                +"----------------------------";
+                +"\nSemester:"+ semester + "\n";
     }
 
 }
