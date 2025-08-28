@@ -21,7 +21,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         StudentDao dao = new StudentDao();
 
-        ArrayList<Student> studentsList =dao .getAllStudentDetails();
+        ArrayList<Student> studentsList =dao.getAllStudentDetails();
 
         while(true){
 
