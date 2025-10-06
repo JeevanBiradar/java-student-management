@@ -8,9 +8,9 @@ public class StudentDao{
     // ? Database connection Method
     public static Connection connect()
     {
-        String url="jdbc:mysql://localhost:3306/student";
-        String user="root";
-        String password="123456";
+        String url="jdbc:mysql://localhost:3306/databsename";
+        String user="your_username";
+        String password="your_password";
 
         Connection conn = null;
 
